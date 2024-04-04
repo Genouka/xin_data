@@ -1,8 +1,8 @@
-# 莘应用(自定义数据源)
+# 莘应用(自定义数据源指南)
 
 这是制作莘应用自定义数据源的官方指导文档。
 
-[莘应用官网](https://edsc.top/)
+[莘应用下载官网](https://edsc.top/)
 
 ## 缘由
 打造一款支持高度自定义、强稳定性的手表应用商店！
@@ -10,14 +10,54 @@
 自莘应用1.4起开始支持自定义数据源！
 
 ## 快速创建
-待研究，目前可以根据以下数据格式进行制作。
+欢迎你来帮助我们依据如下数据格式标准制作一款编辑前端！
+
+制作很简单，你可以结合参考本仓库的三个json文件，根据以下说明进行制作。
+
+示例的话请看本仓库的3个文件。
+
+## 使用示例
+
+在1.4及以上版本客户端的自定义数据源功能中添加如下内容：
+
+![Screenshot_2024-04-04-23-00-34-042_com genouka rarestoret](https://github.com/Genouka/xin_data/assets/142009020/a2a382c2-662f-46e6-9f62-f0d511501924)
+
+这将使用本仓库的[test.json](test.json)文件作为索引。
+
+索引是一个数据源最核心的东西，它是一个数据源的灵魂。
 
 ## 数据格式
+### 概要
+大致格式如下：
 
-### 创建分类表
+```
+索引文件(json)
++ 应用列表文件(json)
++ 分类文件(json)
+```
+
+分类不是必须的，如果你想让用户有更好的体验的话最好还是加上。没有分类时请给索引的categorylistUrl字符串留空。
+
+### 索引json
+命名随意，放在github上或者你的网站上或者别的什么地方。
+
+[查看实例](test.json)
+
+applistUrl填应用列表的json的url，categorylistUrl填分类的json的url
+
+```json
+{
+  "source":{
+    "applistUrl":"https:\/\/raw.githubusercontent.com\/Genouka\/xin_data\/main\/applist.json",
+    "categorylistUrl":"https:\/\/raw.githubusercontent.com\/Genouka\/xin_data\/main\/category.json"
+  }
+}
+```
+
+### 分类表json
 `category.json`
 
-以下是示例数据：
+以下是示例数据，应该一看就懂，不解释了：
 ```json
 {
   "categorylist": [
@@ -33,10 +73,10 @@
 }
 ```
 
-### 创建应用列表
+### 应用列表json
 `applist.json`
 
-以下是示例数据格式：
+以下是示例数据格式，应该一看就懂，不解释了：
 ```json
 {
   "applist": [
@@ -66,10 +106,11 @@
 ```
 
 ## 高级指南
-### 使用一个json囊括分类表和应用列表
+### 使用一个json囊括索引和分类表和应用列表
 符合下列格式即可：
 ```json
 {
+  "source":{ ... },
   "categorylist": [ ... ],
   "applist": [ ... ]
 }
