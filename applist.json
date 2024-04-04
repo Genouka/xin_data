@@ -1,0 +1,24 @@
+{
+  "applist": [
+     {
+      "name": "测试1",
+      "url": "https://fel.forxhr.top:2022/down.php/b676a21d4d041b8b0e40ad1c9b767362.apk",
+      "icon": "https://fel.forxhr.top:2022/view.php/ffc9bc9a46fa3d9a8d9df427463a153d.png",
+      "version": "2.6",
+      "author": "xox",
+      "description": "测试一",
+      "cutphoto": "https://fel.forxhr.top:2022/view.php/aa05b2a24b189b469e107eb42e33cac3.png",
+      "category": 6
+    },
+     {
+      "name": "测试222",
+      "url": "https://fel.forxhr.top:2022/down.php/0422180a72227a079b45cd1e1ffae54d.apk",
+      "icon": "https://fel.forxhr.top:2022/view.php/ad58e5bcaea84a342bc784464ed8776c.jpg",
+      "version": "1.0",
+      "author": "tot",
+      "description": "通过悬浮窗权限覆盖手表UI退出锁定模式需要连续数次长按屏幕可用特定页面覆盖手表UI使手表无法进行操作从而应付各种场景",
+      "cutphoto": "https://fel.forxhr.top:2022/view.php/2920ef46a7c8e4e4fcae0ed6f2772ed4.jpg",
+      "category": 1
+    }
+  ]
+}
