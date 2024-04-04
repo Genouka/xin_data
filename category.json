@@ -1,0 +1,12 @@
+{
+  "categorylist": [
+    {
+      "name": "工具",
+      "category": 1
+    },
+    {
+      "name": "游戏",
+      "category": 2
+    }
+  ]
+}
